@@ -63,6 +63,7 @@ namespace MyProject
                 prompt1.Text = "手机号格式不对，请重新输入！";
                 prompt1.ForeColor = Color.Red;
                 return;
+                //
             }
             resultnum = Program.SearchSql(checkname);
             if (!resultnum)
