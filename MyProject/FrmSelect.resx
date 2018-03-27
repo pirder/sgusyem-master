@@ -123,9 +123,6 @@
   <metadata name="database1DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="database1DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="colPatentName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -291,7 +288,7 @@
         15BnUvPuxV2KuxV5f+bn/KY+RP8AmL/7GYc1+s/vMfv/AN8HN0v0T/HR6lL/AHj/ADP682JcILcCuxV5
         x+ff/KEW/wDzHxf8mpcwO0f7sf1nL0X1/BDQ6D+fht4SnmKzEZijMY5R7IUHEf7z9lpkRj1NfUPx/msj
         PB/NP4+LpPLn5+SxSRP5ismjlRo5F5R7q4KsP95+4OE4tSf4h+P81Rkwdx/HxZP+WvlbUvLHlj9Fai8T
-        3P1mWblAxdOLqgG5C7/Ce2ZGlxHHDhPe06jIJysMpzIaHYq7FXYq/wD/0JBnUvPuxV2KuxV5f+bn/KY+
+        3P1mWblAxdOLqgG5C7/Ce2ZGlxHHDhPe06jIJysMpzIaHYq7FXYq/wD/0J-BnUvPuxV2KuxV5f+bn/KY+
         RP8AmL/7GYc1+s/vMfv/AN8HN0v0T/HR6lL/AHj/ADP682JcILcCuxV5x+ff/KEW/wDzHxf8mpcwO0f7
         sf1nL0X1/B6Ha/7x2n/MPD/yaXM6PIOKeZVMKHYq7FXYq7FXYq//0ZBnUvPuxV2KuxV5Z+dDXMGu+UtQ
         htZbtLGSSeWOFSSRHNE/GoDceXHNdrrEoGrpztJvGQ71d/zvLMW/wpqG5r9v/r1h/P8A9CTH8n/SC3/l

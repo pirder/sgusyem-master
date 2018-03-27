@@ -508,7 +508,7 @@ namespace MyProject
           /*  DataRow dr1 = dt.Rows[dataGridView1.CurrentRow.Index];
             gifullname = dr1["grant_inform_image"].ToString();
             cifullname = dr1["certificate_image"].ToString();
-            */
+            */ 
             DataGridViewRow dgvr = new DataGridViewRow();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
