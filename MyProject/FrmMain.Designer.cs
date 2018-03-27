@@ -222,7 +222,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.patentAddPB.Image = ((System.Drawing.Image)(resources.GetObject("patentAddPB.Image")));
-            this.patentAddPB.Location = new System.Drawing.Point(221, 7);
+            this.patentAddPB.Location = new System.Drawing.Point(224, 10);
             this.patentAddPB.Name = "patentAddPB";
             this.patentAddPB.Size = new System.Drawing.Size(119, 108);
             this.patentAddPB.TabIndex = 17;
@@ -286,7 +286,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("隶书", 14F);
-            this.label1.Location = new System.Drawing.Point(217, 118);
+            this.label1.Location = new System.Drawing.Point(222, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 24);
             this.label1.TabIndex = 10;
