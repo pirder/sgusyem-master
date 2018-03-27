@@ -56,8 +56,18 @@ namespace MyProject
 
         private void 系统管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmUserManager f = new FrmUserManager();
-            f.Show();
+            FrmUserManager um = new FrmUserManager();
+            um.WindowState = FormWindowState.Maximized;
+
+            //去掉边框
+            um.FormBorderStyle = FormBorderStyle.None;
+
+            um.MdiParent = this;
+
+            //设置新窗体的Parent
+            um.Parent = panel2;
+
+            um.Show();
         }
         //尝试一下是否拉去成功
          
@@ -83,6 +93,18 @@ namespace MyProject
         }
 
         private void 日志操作ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 数据查询ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+           // FrmSelect f5 = new FrmSelect();
+          //  f5.MdiParent = this;
+         //   f5.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
