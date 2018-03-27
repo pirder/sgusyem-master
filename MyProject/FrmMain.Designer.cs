@@ -317,6 +317,7 @@
             this.Name = "FrmMain";
             this.Text = "欢迎来到知识产权管理系统！";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
+            this.SizeChanged += new System.EventHandler(this.FrmMain_SizeChanged);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

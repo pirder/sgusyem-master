@@ -229,5 +229,21 @@ namespace MyProject
 
             um.Show();
         }
+
+        private void FrmMain_SizeChanged(object sender, EventArgs e)
+        {
+            //遍历panel中的控件，
+            foreach (var v in mdiPanel.Controls)
+            {
+                //如果是新窗体
+                if (v is FrmMain)
+                {
+                    //新窗体先变为正常大小
+                    (v as FrmMain).WindowState = FormWindowState.Normal;
+                    //新窗体再变为最大化以适应新的Size
+                    (v as FrmMain).WindowState = FormWindowState.Maximized;
+                }
+            }
+        }
     }
 }

@@ -92,8 +92,8 @@ namespace MyProject
                     ConfigurationManager.RefreshSection("appSettings");
                     FrmMain f = new FrmMain(userNum,limit);
                     f.Show();
-                   // MDIParent1 mdi = new MDIParent1(userNum, limit);
-                  //  mdi.Show();
+                    MDIParent1 mdi = new MDIParent1(userNum, limit);
+                    mdi.Show();
                     this.Hide();
                 }
                 else
