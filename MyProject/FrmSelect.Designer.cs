@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSelect));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPatentNum = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -85,6 +85,20 @@
             this.database1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new MyProject.Database1DataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colPatentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPatentType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColFirstDesigner = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColInstitute = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColOtherDesigner = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColpatentNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColComfirmDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColApplyDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColGrantDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColIsGrant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAgency = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPatentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColImageGrant = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColImageCertificate = new System.Windows.Forms.DataGridViewButtonColumn();
             this.statusStripUserName = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -105,20 +119,8 @@
             this.修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.colPatentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPatentType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColFirstDesigner = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColInstitute = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColOtherDesigner = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColpatentNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColComfirmDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColApplyDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColGrantDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColIsGrant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAgency = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPatentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColImageGrant = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColImageCertificate = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -133,6 +135,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -619,14 +622,14 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(125)))), ((int)(((byte)(191)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(58)))), ((int)(((byte)(157)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(125)))), ((int)(((byte)(191)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(58)))), ((int)(((byte)(157)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colPatentName,
@@ -643,25 +646,209 @@
             this.ColPatentId,
             this.ColImageGrant,
             this.ColImageCertificate});
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(125)))), ((int)(((byte)(191)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(58)))), ((int)(((byte)(157)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(125)))), ((int)(((byte)(191)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(58)))), ((int)(((byte)(157)))));
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle32;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 301);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 30;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1234, 262);
+            this.dataGridView1.Size = new System.Drawing.Size(1234, 223);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             this.dataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDown);
             this.dataGridView1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dataGridView1_Scroll);
+            // 
+            // colPatentName
+            // 
+            this.colPatentName.DataPropertyName = "patent_name";
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            this.colPatentName.DefaultCellStyle = dataGridViewCellStyle18;
+            this.colPatentName.FillWeight = 150F;
+            this.colPatentName.HeaderText = "专利名称";
+            this.colPatentName.Name = "colPatentName";
+            this.colPatentName.ReadOnly = true;
+            this.colPatentName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColPatentType
+            // 
+            this.ColPatentType.DataPropertyName = "patent_type";
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            this.ColPatentType.DefaultCellStyle = dataGridViewCellStyle19;
+            this.ColPatentType.FillWeight = 25F;
+            this.ColPatentType.HeaderText = "专利类别";
+            this.ColPatentType.Name = "ColPatentType";
+            this.ColPatentType.ReadOnly = true;
+            this.ColPatentType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColFirstDesigner
+            // 
+            this.ColFirstDesigner.DataPropertyName = "first_designer";
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            this.ColFirstDesigner.DefaultCellStyle = dataGridViewCellStyle20;
+            this.ColFirstDesigner.FillWeight = 20F;
+            this.ColFirstDesigner.HeaderText = "第一设计人";
+            this.ColFirstDesigner.Name = "ColFirstDesigner";
+            this.ColFirstDesigner.ReadOnly = true;
+            this.ColFirstDesigner.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColInstitute
+            // 
+            this.ColInstitute.DataPropertyName = "institute_name";
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            this.ColInstitute.DefaultCellStyle = dataGridViewCellStyle21;
+            this.ColInstitute.FillWeight = 50F;
+            this.ColInstitute.HeaderText = "所属学院";
+            this.ColInstitute.Name = "ColInstitute";
+            this.ColInstitute.ReadOnly = true;
+            this.ColInstitute.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColOtherDesigner
+            // 
+            this.ColOtherDesigner.DataPropertyName = "other_designer";
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            this.ColOtherDesigner.DefaultCellStyle = dataGridViewCellStyle22;
+            this.ColOtherDesigner.FillWeight = 90F;
+            this.ColOtherDesigner.HeaderText = "其他设计人";
+            this.ColOtherDesigner.Name = "ColOtherDesigner";
+            this.ColOtherDesigner.ReadOnly = true;
+            this.ColOtherDesigner.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColpatentNum
+            // 
+            this.ColpatentNum.DataPropertyName = "patent_num";
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            this.ColpatentNum.DefaultCellStyle = dataGridViewCellStyle23;
+            this.ColpatentNum.FillWeight = 53.02617F;
+            this.ColpatentNum.HeaderText = "专利号";
+            this.ColpatentNum.Name = "ColpatentNum";
+            this.ColpatentNum.ReadOnly = true;
+            this.ColpatentNum.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColComfirmDate
+            // 
+            this.ColComfirmDate.DataPropertyName = "confirm_date";
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            this.ColComfirmDate.DefaultCellStyle = dataGridViewCellStyle24;
+            this.ColComfirmDate.FillWeight = 25F;
+            this.ColComfirmDate.HeaderText = "备案日期";
+            this.ColComfirmDate.Name = "ColComfirmDate";
+            this.ColComfirmDate.ReadOnly = true;
+            this.ColComfirmDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColApplyDate
+            // 
+            this.ColApplyDate.DataPropertyName = "apply_date";
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            this.ColApplyDate.DefaultCellStyle = dataGridViewCellStyle25;
+            this.ColApplyDate.FillWeight = 25F;
+            this.ColApplyDate.HeaderText = "申请日期";
+            this.ColApplyDate.Name = "ColApplyDate";
+            this.ColApplyDate.ReadOnly = true;
+            this.ColApplyDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColGrantDate
+            // 
+            this.ColGrantDate.DataPropertyName = "grant_date";
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            this.ColGrantDate.DefaultCellStyle = dataGridViewCellStyle26;
+            this.ColGrantDate.FillWeight = 25F;
+            this.ColGrantDate.HeaderText = "授权日期";
+            this.ColGrantDate.Name = "ColGrantDate";
+            this.ColGrantDate.ReadOnly = true;
+            this.ColGrantDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColIsGrant
+            // 
+            this.ColIsGrant.DataPropertyName = "isgrant";
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black;
+            this.ColIsGrant.DefaultCellStyle = dataGridViewCellStyle27;
+            this.ColIsGrant.FillWeight = 10F;
+            this.ColIsGrant.HeaderText = "是否授权";
+            this.ColIsGrant.Name = "ColIsGrant";
+            this.ColIsGrant.ReadOnly = true;
+            this.ColIsGrant.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColAgency
+            // 
+            this.ColAgency.DataPropertyName = "agency";
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
+            this.ColAgency.DefaultCellStyle = dataGridViewCellStyle28;
+            this.ColAgency.FillWeight = 53.02617F;
+            this.ColAgency.HeaderText = "代办机构";
+            this.ColAgency.Name = "ColAgency";
+            this.ColAgency.ReadOnly = true;
+            this.ColAgency.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColPatentId
+            // 
+            this.ColPatentId.DataPropertyName = "patent_id";
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
+            this.ColPatentId.DefaultCellStyle = dataGridViewCellStyle29;
+            this.ColPatentId.FillWeight = 12F;
+            this.ColPatentId.HeaderText = "专利序号";
+            this.ColPatentId.Name = "ColPatentId";
+            this.ColPatentId.ReadOnly = true;
+            this.ColPatentId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColImageGrant
+            // 
+            this.ColImageGrant.DataPropertyName = "grant_inform_image";
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            this.ColImageGrant.DefaultCellStyle = dataGridViewCellStyle30;
+            this.ColImageGrant.FillWeight = 20F;
+            this.ColImageGrant.HeaderText = "受理通知书图片";
+            this.ColImageGrant.Name = "ColImageGrant";
+            this.ColImageGrant.ReadOnly = true;
+            this.ColImageGrant.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // ColImageCertificate
+            // 
+            this.ColImageCertificate.DataPropertyName = "certificate_image";
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Black;
+            this.ColImageCertificate.DefaultCellStyle = dataGridViewCellStyle31;
+            this.ColImageCertificate.FillWeight = 20F;
+            this.ColImageCertificate.HeaderText = "证书图片";
+            this.ColImageCertificate.Name = "ColImageCertificate";
+            this.ColImageCertificate.ReadOnly = true;
+            this.ColImageCertificate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // statusStripUserName
             // 
@@ -881,189 +1068,23 @@
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // colPatentName
+            // panel3
             // 
-            this.colPatentName.DataPropertyName = "patent_name";
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.colPatentName.DefaultCellStyle = dataGridViewCellStyle2;
-            this.colPatentName.FillWeight = 150F;
-            this.colPatentName.HeaderText = "专利名称";
-            this.colPatentName.Name = "colPatentName";
-            this.colPatentName.ReadOnly = true;
-            this.colPatentName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Location = new System.Drawing.Point(1, 524);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1233, 23);
+            this.panel3.TabIndex = 17;
             // 
-            // ColPatentType
+            // label14
             // 
-            this.ColPatentType.DataPropertyName = "patent_type";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.ColPatentType.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ColPatentType.FillWeight = 25F;
-            this.ColPatentType.HeaderText = "专利类别";
-            this.ColPatentType.Name = "ColPatentType";
-            this.ColPatentType.ReadOnly = true;
-            this.ColPatentType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColFirstDesigner
-            // 
-            this.ColFirstDesigner.DataPropertyName = "first_designer";
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.ColFirstDesigner.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ColFirstDesigner.FillWeight = 20F;
-            this.ColFirstDesigner.HeaderText = "第一设计人";
-            this.ColFirstDesigner.Name = "ColFirstDesigner";
-            this.ColFirstDesigner.ReadOnly = true;
-            this.ColFirstDesigner.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColInstitute
-            // 
-            this.ColInstitute.DataPropertyName = "institute_name";
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.ColInstitute.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ColInstitute.FillWeight = 50F;
-            this.ColInstitute.HeaderText = "所属学院";
-            this.ColInstitute.Name = "ColInstitute";
-            this.ColInstitute.ReadOnly = true;
-            this.ColInstitute.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColOtherDesigner
-            // 
-            this.ColOtherDesigner.DataPropertyName = "other_designer";
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.ColOtherDesigner.DefaultCellStyle = dataGridViewCellStyle6;
-            this.ColOtherDesigner.FillWeight = 90F;
-            this.ColOtherDesigner.HeaderText = "其他设计人";
-            this.ColOtherDesigner.Name = "ColOtherDesigner";
-            this.ColOtherDesigner.ReadOnly = true;
-            this.ColOtherDesigner.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColpatentNum
-            // 
-            this.ColpatentNum.DataPropertyName = "patent_num";
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            this.ColpatentNum.DefaultCellStyle = dataGridViewCellStyle7;
-            this.ColpatentNum.FillWeight = 53.02617F;
-            this.ColpatentNum.HeaderText = "专利号";
-            this.ColpatentNum.Name = "ColpatentNum";
-            this.ColpatentNum.ReadOnly = true;
-            this.ColpatentNum.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColComfirmDate
-            // 
-            this.ColComfirmDate.DataPropertyName = "confirm_date";
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            this.ColComfirmDate.DefaultCellStyle = dataGridViewCellStyle8;
-            this.ColComfirmDate.FillWeight = 25F;
-            this.ColComfirmDate.HeaderText = "备案日期";
-            this.ColComfirmDate.Name = "ColComfirmDate";
-            this.ColComfirmDate.ReadOnly = true;
-            this.ColComfirmDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColApplyDate
-            // 
-            this.ColApplyDate.DataPropertyName = "apply_date";
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.ColApplyDate.DefaultCellStyle = dataGridViewCellStyle9;
-            this.ColApplyDate.FillWeight = 25F;
-            this.ColApplyDate.HeaderText = "申请日期";
-            this.ColApplyDate.Name = "ColApplyDate";
-            this.ColApplyDate.ReadOnly = true;
-            this.ColApplyDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColGrantDate
-            // 
-            this.ColGrantDate.DataPropertyName = "grant_date";
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.ColGrantDate.DefaultCellStyle = dataGridViewCellStyle10;
-            this.ColGrantDate.FillWeight = 25F;
-            this.ColGrantDate.HeaderText = "授权日期";
-            this.ColGrantDate.Name = "ColGrantDate";
-            this.ColGrantDate.ReadOnly = true;
-            this.ColGrantDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColIsGrant
-            // 
-            this.ColIsGrant.DataPropertyName = "isgrant";
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            this.ColIsGrant.DefaultCellStyle = dataGridViewCellStyle11;
-            this.ColIsGrant.FillWeight = 10F;
-            this.ColIsGrant.HeaderText = "是否授权";
-            this.ColIsGrant.Name = "ColIsGrant";
-            this.ColIsGrant.ReadOnly = true;
-            this.ColIsGrant.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColAgency
-            // 
-            this.ColAgency.DataPropertyName = "agency";
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            this.ColAgency.DefaultCellStyle = dataGridViewCellStyle12;
-            this.ColAgency.FillWeight = 53.02617F;
-            this.ColAgency.HeaderText = "代办机构";
-            this.ColAgency.Name = "ColAgency";
-            this.ColAgency.ReadOnly = true;
-            this.ColAgency.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColPatentId
-            // 
-            this.ColPatentId.DataPropertyName = "patent_id";
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            this.ColPatentId.DefaultCellStyle = dataGridViewCellStyle13;
-            this.ColPatentId.FillWeight = 12F;
-            this.ColPatentId.HeaderText = "专利序号";
-            this.ColPatentId.Name = "ColPatentId";
-            this.ColPatentId.ReadOnly = true;
-            this.ColPatentId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColImageGrant
-            // 
-            this.ColImageGrant.DataPropertyName = "grant_inform_image";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            this.ColImageGrant.DefaultCellStyle = dataGridViewCellStyle14;
-            this.ColImageGrant.FillWeight = 20F;
-            this.ColImageGrant.HeaderText = "受理通知书图片";
-            this.ColImageGrant.Name = "ColImageGrant";
-            this.ColImageGrant.ReadOnly = true;
-            this.ColImageGrant.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // ColImageCertificate
-            // 
-            this.ColImageCertificate.DataPropertyName = "certificate_image";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            this.ColImageCertificate.DefaultCellStyle = dataGridViewCellStyle15;
-            this.ColImageCertificate.FillWeight = 20F;
-            this.ColImageCertificate.HeaderText = "证书图片";
-            this.ColImageCertificate.Name = "ColImageCertificate";
-            this.ColImageCertificate.ReadOnly = true;
-            this.ColImageCertificate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(11, 3);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 15);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "label14";
             // 
             // FrmSelect
             // 
@@ -1071,6 +1092,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1234, 575);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.selectexitbtn);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.selectimportexcelbtn);
@@ -1081,7 +1103,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSelect";
             this.Text = "数据查询";
@@ -1104,6 +1126,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1284,5 +1308,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPatentId;
         private System.Windows.Forms.DataGridViewButtonColumn ColImageGrant;
         private System.Windows.Forms.DataGridViewButtonColumn ColImageCertificate;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label14;
     }
 }
