@@ -223,7 +223,7 @@ namespace MyProject
             um.FormBorderStyle = FormBorderStyle.None;
 
             um.MdiParent = this;
-
+            //
             //设置新窗体的Parent
             um.Parent = mdiPanel;
             um.Show();
