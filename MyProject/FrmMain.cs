@@ -226,7 +226,6 @@ namespace MyProject
 
             //设置新窗体的Parent
             um.Parent = mdiPanel;
-            //
             um.Show();
         }
 
