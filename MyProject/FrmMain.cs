@@ -13,7 +13,17 @@ namespace MyProject
 {
     public partial class FrmMain : Form
     {
-        int  limit = 1;
+        int limit = 1;
+
+        public static FrmSelect fmselect = null;
+        public static FrmUserManager fmusermanager = null;
+        public static FrmAdd fmadd =null;
+        public Form[] frm = {fmselect, fmusermanager , fmadd };
+        int fmselectindex = 0;
+        int fmusermanggerindex = 1;
+        int fmaddindex = 2;
+        
+       
         public FrmMain(string num)
         {
             InitializeComponent();
@@ -34,6 +44,7 @@ namespace MyProject
             DataRow dr = dt.Rows[0];
             string userName = dr["users_name"].ToString();
             toolStripMain.Text = "欢迎用户:" + userName + "进入韶关学院知识产权管理员管理系统";
+            
         }
 
        /* private void 数据查询ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,10 +65,6 @@ namespace MyProject
             Application.Exit();
         }
 
-        private void 系统管理ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
         //尝试一下是否拉去成功
          
    /*     private void button1_Click(object sender, EventArgs e)
@@ -84,129 +91,191 @@ namespace MyProject
 
         private void 数据查询ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            FrmSelect f = new FrmSelect(i, toolStripMain.Text, limit);
-            f.WindowState = FormWindowState.Maximized;
 
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
-
-            f.MdiParent = this;
-
+            fmselect.FormBorderStyle = FormBorderStyle.None;
+            fmselect.MdiParent = this;
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
         }
 
         private void patentSearchPB_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            FrmSelect f = new FrmSelect(i, toolStripMain.Text, limit);
-            f.WindowState = FormWindowState.Maximized;
+
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
 
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
+            fmselect.FormBorderStyle = FormBorderStyle.None;
 
-            f.MdiParent = this;
+            fmselect.MdiParent = this;
 
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
         }
 
         private void patentAddPB_Click(object sender, EventArgs e)
         {
-            FrmAdd f = new FrmAdd();
-            f.WindowState = FormWindowState.Maximized;
+            frm[fmusermanggerindex] = null;
+            frm[fmselectindex] = null;
+            if (frm[fmaddindex] != null)
+            {
+                frm[fmaddindex].Activate();
+                return;
+            }
+            fmadd = new FrmAdd();
+            frm[fmaddindex] = fmadd;
+            fmadd.WindowState = FormWindowState.Maximized;
 
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
+            fmadd.FormBorderStyle = FormBorderStyle.None;
 
-            f.MdiParent = this;
+            fmadd.MdiParent = this;
 
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmadd.Parent = mdiPanel;
+            fmadd.Show();
         }
 
         private void patentModifyPB_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            FrmSelect f = new FrmSelect(i, toolStripMain.Text);
-            f.WindowState = FormWindowState.Maximized;
+
+
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
 
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
+            fmselect.FormBorderStyle = FormBorderStyle.None;
 
-            f.MdiParent = this;
+            fmselect.MdiParent = this;
 
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
         }
 
         private void patentDeletePB_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            FrmSelect f = new FrmSelect(i, toolStripMain.Text);
-            f.WindowState = FormWindowState.Maximized;
+
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
 
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
+            fmselect.FormBorderStyle = FormBorderStyle.None;
 
-            f.MdiParent = this;
+            fmselect.MdiParent = this;
 
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
         }
 
         private void 新增专利ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmAdd f = new FrmAdd();
-            f.WindowState = FormWindowState.Maximized;
+            frm[fmusermanggerindex] = null;
+            frm[fmselectindex] = null;
+            if (frm[fmaddindex] != null)
+            {
+                frm[fmaddindex].Activate();
+                return;
+            }
+            fmadd = new FrmAdd();
+            frm[fmaddindex] = fmadd;
+            fmadd.WindowState = FormWindowState.Maximized;
 
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
+            fmadd.FormBorderStyle = FormBorderStyle.None;
 
-            f.MdiParent = this;
+            fmadd.MdiParent = this;
 
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmadd.Parent = mdiPanel;
+            fmadd.Show();
         }
 
         private void 删除专利ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            FrmSelect f = new FrmSelect(i, toolStripMain.Text);
-            f.WindowState = FormWindowState.Maximized;
+
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
 
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
+            fmselect.FormBorderStyle = FormBorderStyle.None;
 
-            f.MdiParent = this;
+            fmselect.MdiParent = this;
 
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
         }
 
         private void 修改专利ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            int i = 0;
-            FrmSelect f = new FrmSelect(i, toolStripMain.Text);
-            f.WindowState = FormWindowState.Maximized;
+
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
 
             //去掉边框
-            f.FormBorderStyle = FormBorderStyle.None;
+            fmselect.FormBorderStyle = FormBorderStyle.None;
 
-            f.MdiParent = this;
+            fmselect.MdiParent = this;
 
             //设置新窗体的Parent
-            f.Parent = mdiPanel;
-            f.Show();
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
         }
 
         private void exitPB_Click(object sender, EventArgs e)
@@ -214,35 +283,75 @@ namespace MyProject
             Application.Exit();
         }
 
-        private void 日志操作ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmUserManager um = new FrmUserManager();
-            um.WindowState = FormWindowState.Maximized;
-
-            //去掉边框
-            um.FormBorderStyle = FormBorderStyle.None;
-
-            um.MdiParent = this;
-            //
-            //设置新窗体的Parent
-            um.Parent = mdiPanel;
-            um.Show();
-        }
-
         private void FrmMain_SizeChanged(object sender, EventArgs e)
         {
+
             //遍历panel中的控件，
-            foreach (var v in mdiPanel.Controls)
+            /*  foreach (var v in mdiPanel.Controls)
+              {
+                  //如果是新窗体
+                  if (v is FrmMain)
+                 // if (this.WindowState == FormWindowState.Maximized)
+                  {
+                      //新窗体先变为正常大小
+                      (v as FrmMain).WindowState = FormWindowState.Normal;
+                      //新窗体再变为最大化以适应新的Size
+                      (v as FrmMain).WindowState = FormWindowState.Maximized;
+                  }            
+
+              }*/
+            //Form2 subform = new Form2();//
+          
+            if (this.WindowState == FormWindowState.Maximized)
             {
-                //如果是新窗体
-                if (v is FrmMain)
+               
+                for (int i = 0; i < frm.Length; i++)
                 {
-                    //新窗体先变为正常大小
-                    (v as FrmMain).WindowState = FormWindowState.Normal;
-                    //新窗体再变为最大化以适应新的Size
-                    (v as FrmMain).WindowState = FormWindowState.Maximized;
+                    if (frm[i] == null)
+                       continue;
+                    frm[i].WindowState = FormWindowState.Normal;
+                    frm[i].WindowState = FormWindowState.Maximized;
                 }
             }
+            if (this.WindowState == FormWindowState.Normal)
+            {             
+                for (int i = 0; i < frm.Length; i++)
+                {
+                    if (frm[i] == null)
+                        continue;
+                    frm[i].WindowState = FormWindowState.Normal;
+                    frm[i].WindowState = FormWindowState.Maximized;
+                }
+            }
+            
+        }
+
+        private void 用户管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {      
+            frm[fmselectindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmusermanggerindex] != null)
+            {
+                frm[fmusermanggerindex].Activate();
+                return;
+            }
+            fmusermanager = new FrmUserManager();
+            frm[fmusermanggerindex] = fmusermanager;
+            fmusermanager.WindowState = FormWindowState.Maximized;
+
+            //去掉边框
+            fmusermanager.FormBorderStyle = FormBorderStyle.None;
+
+            fmusermanager.MdiParent = this;
+
+            //设置新窗体的Parent
+            fmusermanager.Parent = mdiPanel;
+            fmusermanager.Show();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -122,10 +122,11 @@ namespace MyProject
                 comboGrantDateEndYear.Items.Add(i);
         }
 
-        public FrmSelect(int a, string name)
+        public FrmSelect(int a, int limit)
         {
             InitializeComponent();
-            statusStripUserName.Text = name;
+            //  statusStripUserName.Text = name;
+            statusStripUserName.Visible = false;
             string sqlinstitutecombo = "select institute_name from institute";
             DataTable dt = new DataTable();
             dt = Program.GetDataTable(sqlinstitutecombo);
@@ -1068,11 +1069,11 @@ namespace MyProject
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         public static extern int GetClassLong(IntPtr hwnd, int nIndex);
 
-        private void FrmSelect_Load(object sender, EventArgs e)
+     /*   private void FrmSelect_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             SetClassLong(this.Handle, GCL_STYLE, GetClassLong(this.Handle, GCL_STYLE) | CS_DropSHADOW);
-        }
+        }*/
 
         private Point offset;
 
@@ -1104,7 +1105,7 @@ namespace MyProject
 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+      /*  private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             pictureBox3.Visible = false;
@@ -1161,7 +1162,7 @@ namespace MyProject
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
         {
             pictureBox2.BackColor = Color.FromArgb(113, 159, 215);
-        }
+        }*/
 
         private void label15_Click(object sender, EventArgs e)
         {
@@ -1188,10 +1189,6 @@ namespace MyProject
             selectimportexcelbtn.BackColor = Color.FromArgb(255, 255, 255);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         //首先生成DataGridView的CellMouseDown事件  
         //右键获得单元格的选定
         private void dataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
@@ -1470,6 +1467,8 @@ namespace MyProject
             ExportToExcel d = new ExportToExcel();
             d.OutputAsExcelFile(dataGridView1);
         }
+
+      
 
 
         // System.Timers.Timer t1 = new System.Timers.Timer(10000);//实例化Timer类，设置间隔时间为10000毫秒；
