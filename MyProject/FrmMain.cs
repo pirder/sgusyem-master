@@ -349,9 +349,25 @@ namespace MyProject
             fmusermanager.Show();
         }
 
-        private void FrmMain_Load(object sender, EventArgs e)
-        {
 
+        private void exitPanel_MouseEnter(object sender, EventArgs e)
+        {
+            exitPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void exitPanel_MouseLeave(object sender, EventArgs e)
+        {
+            exitPanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+        private void exitPB_MouseEnter(object sender, EventArgs e)
+        {
+            exitPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void exitPB_MouseLeave(object sender, EventArgs e)
+        {
+            exitPanel.BackColor = Color.FromArgb(241, 248, 255);
         }
     }
 }

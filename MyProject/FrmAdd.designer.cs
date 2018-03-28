@@ -422,6 +422,7 @@ namespace MyProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(757, 410);
             this.Controls.Add(this.agency);
             this.Controls.Add(this.patent_type);

@@ -43,20 +43,23 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.exitPanel = new System.Windows.Forms.Panel();
             this.exitPB = new System.Windows.Forms.PictureBox();
+            this.exitLB = new System.Windows.Forms.Label();
             this.patentModifyPB = new System.Windows.Forms.PictureBox();
             this.patentDeletePB = new System.Windows.Forms.PictureBox();
             this.patentAddPB = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.patentSearchLB = new System.Windows.Forms.Label();
             this.patentSearchPB = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.patentModifyLB = new System.Windows.Forms.Label();
+            this.patentDeleteLB = new System.Windows.Forms.Label();
+            this.patentAddLB = new System.Windows.Forms.Label();
             this.mdiPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.menuPanel.SuspendLayout();
+            this.exitPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patentModifyPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patentDeletePB)).BeginInit();
@@ -177,31 +180,54 @@
             this.menuPanel.AutoSize = true;
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.menuPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.menuPanel.Controls.Add(this.exitPB);
+            this.menuPanel.Controls.Add(this.panel1);
+            this.menuPanel.Controls.Add(this.exitPanel);
             this.menuPanel.Controls.Add(this.patentModifyPB);
             this.menuPanel.Controls.Add(this.patentDeletePB);
             this.menuPanel.Controls.Add(this.patentAddPB);
-            this.menuPanel.Controls.Add(this.label4);
+            this.menuPanel.Controls.Add(this.patentSearchLB);
             this.menuPanel.Controls.Add(this.patentSearchPB);
-            this.menuPanel.Controls.Add(this.label5);
-            this.menuPanel.Controls.Add(this.label3);
-            this.menuPanel.Controls.Add(this.label2);
-            this.menuPanel.Controls.Add(this.label1);
+            this.menuPanel.Controls.Add(this.patentModifyLB);
+            this.menuPanel.Controls.Add(this.patentDeleteLB);
+            this.menuPanel.Controls.Add(this.patentAddLB);
             this.menuPanel.Location = new System.Drawing.Point(0, 31);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(1253, 94);
+            this.menuPanel.Size = new System.Drawing.Size(1253, 90);
             this.menuPanel.TabIndex = 7;
+            // 
+            // exitPanel
+            // 
+            this.exitPanel.Controls.Add(this.exitPB);
+            this.exitPanel.Controls.Add(this.exitLB);
+            this.exitPanel.Location = new System.Drawing.Point(592, 3);
+            this.exitPanel.Name = "exitPanel";
+            this.exitPanel.Size = new System.Drawing.Size(90, 80);
+            this.exitPanel.TabIndex = 21;
+            this.exitPanel.MouseEnter += new System.EventHandler(this.exitPanel_MouseEnter);
+            this.exitPanel.MouseLeave += new System.EventHandler(this.exitPanel_MouseLeave);
             // 
             // exitPB
             // 
             this.exitPB.Image = ((System.Drawing.Image)(resources.GetObject("exitPB.Image")));
-            this.exitPB.Location = new System.Drawing.Point(592, 3);
+            this.exitPB.Location = new System.Drawing.Point(14, 0);
             this.exitPB.Name = "exitPB";
             this.exitPB.Size = new System.Drawing.Size(62, 56);
             this.exitPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitPB.TabIndex = 20;
             this.exitPB.TabStop = false;
             this.exitPB.Click += new System.EventHandler(this.exitPB_Click);
+            this.exitPB.MouseEnter += new System.EventHandler(this.exitPB_MouseEnter);
+            this.exitPB.MouseLeave += new System.EventHandler(this.exitPB_MouseLeave);
+            // 
+            // exitLB
+            // 
+            this.exitLB.AutoSize = true;
+            this.exitLB.Font = new System.Drawing.Font("隶书", 10F);
+            this.exitLB.Location = new System.Drawing.Point(5, 59);
+            this.exitLB.Name = "exitLB";
+            this.exitLB.Size = new System.Drawing.Size(80, 17);
+            this.exitLB.TabIndex = 14;
+            this.exitLB.Text = "退出系统";
             // 
             // patentModifyPB
             // 
@@ -236,15 +262,15 @@
             this.patentAddPB.TabStop = false;
             this.patentAddPB.Click += new System.EventHandler(this.patentAddPB_Click);
             // 
-            // label4
+            // patentSearchLB
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("隶书", 10F);
-            this.label4.Location = new System.Drawing.Point(30, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 17);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "专利查询";
+            this.patentSearchLB.AutoSize = true;
+            this.patentSearchLB.Font = new System.Drawing.Font("隶书", 10F);
+            this.patentSearchLB.Location = new System.Drawing.Point(30, 66);
+            this.patentSearchLB.Name = "patentSearchLB";
+            this.patentSearchLB.Size = new System.Drawing.Size(80, 17);
+            this.patentSearchLB.TabIndex = 16;
+            this.patentSearchLB.Text = "专利查询";
             // 
             // patentSearchPB
             // 
@@ -257,45 +283,35 @@
             this.patentSearchPB.TabStop = false;
             this.patentSearchPB.Click += new System.EventHandler(this.patentSearchPB_Click);
             // 
-            // label5
+            // patentModifyLB
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("隶书", 10F);
-            this.label5.Location = new System.Drawing.Point(584, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 17);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "退出系统";
+            this.patentModifyLB.AutoSize = true;
+            this.patentModifyLB.Font = new System.Drawing.Font("隶书", 10F);
+            this.patentModifyLB.Location = new System.Drawing.Point(306, 66);
+            this.patentModifyLB.Name = "patentModifyLB";
+            this.patentModifyLB.Size = new System.Drawing.Size(80, 17);
+            this.patentModifyLB.TabIndex = 12;
+            this.patentModifyLB.Text = "修改专利";
             // 
-            // label3
+            // patentDeleteLB
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("隶书", 10F);
-            this.label3.Location = new System.Drawing.Point(306, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 17);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "修改专利";
+            this.patentDeleteLB.AutoSize = true;
+            this.patentDeleteLB.Font = new System.Drawing.Font("隶书", 10F);
+            this.patentDeleteLB.Location = new System.Drawing.Point(445, 66);
+            this.patentDeleteLB.Name = "patentDeleteLB";
+            this.patentDeleteLB.Size = new System.Drawing.Size(80, 17);
+            this.patentDeleteLB.TabIndex = 11;
+            this.patentDeleteLB.Text = "删除专利";
             // 
-            // label2
+            // patentAddLB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("隶书", 10F);
-            this.label2.Location = new System.Drawing.Point(445, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 17);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "删除专利";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("隶书", 10F);
-            this.label1.Location = new System.Drawing.Point(168, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 17);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "新增专利";
+            this.patentAddLB.AutoSize = true;
+            this.patentAddLB.Font = new System.Drawing.Font("隶书", 10F);
+            this.patentAddLB.Location = new System.Drawing.Point(168, 66);
+            this.patentAddLB.Name = "patentAddLB";
+            this.patentAddLB.Size = new System.Drawing.Size(80, 17);
+            this.patentAddLB.TabIndex = 10;
+            this.patentAddLB.Text = "新增专利";
             // 
             // mdiPanel
             // 
@@ -306,6 +322,13 @@
             this.mdiPanel.Name = "mdiPanel";
             this.mdiPanel.Size = new System.Drawing.Size(1253, 434);
             this.mdiPanel.TabIndex = 10;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(754, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(95, 80);
+            this.panel1.TabIndex = 22;
             // 
             // FrmMain
             // 
@@ -322,7 +345,6 @@
             this.Name = "FrmMain";
             this.Text = "欢迎来到知识产权管理系统！";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
-            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.SizeChanged += new System.EventHandler(this.FrmMain_SizeChanged);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -330,6 +352,8 @@
             this.statusStrip1.PerformLayout();
             this.menuPanel.ResumeLayout(false);
             this.menuPanel.PerformLayout();
+            this.exitPanel.ResumeLayout(false);
+            this.exitPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patentModifyPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patentDeletePB)).EndInit();
@@ -348,10 +372,10 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripMain;
         private System.Windows.Forms.Panel menuPanel;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label patentDeleteLB;
+        private System.Windows.Forms.Label patentAddLB;
+        private System.Windows.Forms.Label exitLB;
+        private System.Windows.Forms.Label patentModifyLB;
         private System.Windows.Forms.ToolStripMenuItem 数据查询ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 新增专利ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除专利ToolStripMenuItem;
@@ -359,12 +383,14 @@
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.Panel mdiPanel;
         private System.Windows.Forms.PictureBox patentAddPB;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label patentSearchLB;
         private System.Windows.Forms.PictureBox patentSearchPB;
         private System.Windows.Forms.PictureBox patentDeletePB;
         private System.Windows.Forms.PictureBox patentModifyPB;
         private System.Windows.Forms.PictureBox exitPB;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.Panel exitPanel;
+        private System.Windows.Forms.Panel panel1;
     }
 }

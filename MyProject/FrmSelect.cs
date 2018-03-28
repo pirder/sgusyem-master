@@ -504,6 +504,12 @@ namespace MyProject
            // ColImageCertificate.Text = "查看";//设置了TEXT的值，
             ColImageCertificate.UseColumnTextForButtonValue = false;//设置了这个属性    
             dt = Program.GetDataTable(sql.ToString());
+            if (dt.Rows.Count == 0)
+            {              
+                dataGridView1.DataSource = dt;
+                MessageBox.Show("没有符合条件的数据");
+                return;
+            }
             dataGridView1.DataSource = dt;
             DataRow dr = dt.Rows[0];
           /*  DataRow dr1 = dt.Rows[dataGridView1.CurrentRow.Index];
@@ -536,8 +542,7 @@ namespace MyProject
             }
             //  dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(81, 125, 191);
-            if (dataGridView1.Rows.Count == 0)
-                MessageBox.Show("没有符合条件的数据");
+           
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
