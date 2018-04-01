@@ -275,7 +275,9 @@
             // patentAddPB
             // 
             this.patentAddPB.Image = ((System.Drawing.Image)(resources.GetObject("patentAddPB.Image")));
+
             this.patentAddPB.Location = new System.Drawing.Point(19, 0);
+
             this.patentAddPB.Name = "patentAddPB";
             this.patentAddPB.Size = new System.Drawing.Size(58, 58);
             this.patentAddPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -305,6 +307,7 @@
             this.patentSearchPB.TabIndex = 15;
             this.patentSearchPB.TabStop = false;
             this.patentSearchPB.Click += new System.EventHandler(this.patentSearchPB_Click);
+
             this.patentSearchPB.MouseEnter += new System.EventHandler(this.patentSearchPB_MouseEnter);
             this.patentSearchPB.MouseLeave += new System.EventHandler(this.patentSearchPB_MouseLeave);
             // 
@@ -338,6 +341,7 @@
             this.patentAddLB.Size = new System.Drawing.Size(80, 17);
             this.patentAddLB.TabIndex = 10;
             this.patentAddLB.Text = "新增专利";
+
             // 
             // mdiPanel
             // 
