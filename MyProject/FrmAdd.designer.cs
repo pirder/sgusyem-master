@@ -122,16 +122,16 @@ namespace MyProject
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 200);
+            this.label4.Location = new System.Drawing.Point(283, 23);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.Size = new System.Drawing.Size(202, 15);
             this.label4.TabIndex = 0;
-            this.label4.Text = "专利号：";
+            this.label4.Text = "（申请号，登记号）专利号：";
             this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
             // patent_num
             // 
-            this.patent_num.Location = new System.Drawing.Point(98, 197);
+            this.patent_num.Location = new System.Drawing.Point(491, 19);
             this.patent_num.Name = "patent_num";
             this.patent_num.Size = new System.Drawing.Size(159, 25);
             this.patent_num.TabIndex = 1;
@@ -139,7 +139,7 @@ namespace MyProject
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 250);
+            this.label5.Location = new System.Drawing.Point(17, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 15);
             this.label5.TabIndex = 0;
@@ -149,7 +149,7 @@ namespace MyProject
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 302);
+            this.label6.Location = new System.Drawing.Point(19, 245);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 0;
@@ -159,7 +159,7 @@ namespace MyProject
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(406, 22);
+            this.label7.Location = new System.Drawing.Point(403, 158);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 15);
             this.label7.TabIndex = 0;
@@ -179,7 +179,7 @@ namespace MyProject
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(361, 194);
+            this.label9.Location = new System.Drawing.Point(361, 219);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(127, 15);
             this.label9.TabIndex = 0;
@@ -238,7 +238,7 @@ namespace MyProject
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(17, 350);
+            this.label11.Location = new System.Drawing.Point(20, 279);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 15);
             this.label11.TabIndex = 0;
@@ -261,7 +261,7 @@ namespace MyProject
             this.comboBox2.Items.AddRange(new object[] {
             "是",
             "否"});
-            this.comboBox2.Location = new System.Drawing.Point(491, 108);
+            this.comboBox2.Location = new System.Drawing.Point(491, 111);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(159, 23);
             this.comboBox2.TabIndex = 4;
@@ -278,7 +278,7 @@ namespace MyProject
             // 
             // apply_date
             // 
-            this.apply_date.Location = new System.Drawing.Point(99, 243);
+            this.apply_date.Location = new System.Drawing.Point(97, 198);
             this.apply_date.Name = "apply_date";
             this.apply_date.Size = new System.Drawing.Size(160, 25);
             this.apply_date.TabIndex = 6;
@@ -286,14 +286,14 @@ namespace MyProject
             // 
             // grant_date
             // 
-            this.grant_date.Location = new System.Drawing.Point(97, 295);
+            this.grant_date.Location = new System.Drawing.Point(97, 239);
             this.grant_date.Name = "grant_date";
             this.grant_date.Size = new System.Drawing.Size(160, 25);
             this.grant_date.TabIndex = 6;
             // 
             // confirm_date
             // 
-            this.confirm_date.Location = new System.Drawing.Point(97, 348);
+            this.confirm_date.Location = new System.Drawing.Point(97, 279);
             this.confirm_date.Name = "confirm_date";
             this.confirm_date.Size = new System.Drawing.Size(160, 25);
             this.confirm_date.TabIndex = 6;
@@ -301,7 +301,7 @@ namespace MyProject
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(379, 245);
+            this.label13.Location = new System.Drawing.Point(382, 279);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(106, 15);
             this.label13.TabIndex = 0;
@@ -310,7 +310,7 @@ namespace MyProject
             // 
             // picture1
             // 
-            this.picture1.Location = new System.Drawing.Point(491, 185);
+            this.picture1.Location = new System.Drawing.Point(491, 210);
             this.picture1.Name = "picture1";
             this.picture1.Size = new System.Drawing.Size(75, 32);
             this.picture1.TabIndex = 7;
@@ -320,7 +320,7 @@ namespace MyProject
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(491, 238);
+            this.button3.Location = new System.Drawing.Point(491, 271);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 30);
             this.button3.TabIndex = 8;
@@ -330,7 +330,7 @@ namespace MyProject
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(590, 185);
+            this.button1.Location = new System.Drawing.Point(590, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 32);
             this.button1.TabIndex = 9;
@@ -340,7 +340,7 @@ namespace MyProject
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(590, 239);
+            this.button4.Location = new System.Drawing.Point(590, 271);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(86, 29);
             this.button4.TabIndex = 10;
@@ -361,7 +361,7 @@ namespace MyProject
             // appckb
             // 
             this.appckb.AutoSize = true;
-            this.appckb.Location = new System.Drawing.Point(265, 249);
+            this.appckb.Location = new System.Drawing.Point(263, 205);
             this.appckb.Name = "appckb";
             this.appckb.Size = new System.Drawing.Size(44, 19);
             this.appckb.TabIndex = 12;
@@ -372,7 +372,7 @@ namespace MyProject
             // grantackb
             // 
             this.grantackb.AutoSize = true;
-            this.grantackb.Location = new System.Drawing.Point(265, 298);
+            this.grantackb.Location = new System.Drawing.Point(263, 245);
             this.grantackb.Name = "grantackb";
             this.grantackb.Size = new System.Drawing.Size(44, 19);
             this.grantackb.TabIndex = 12;
@@ -383,7 +383,7 @@ namespace MyProject
             // patentckb
             // 
             this.patentckb.AutoSize = true;
-            this.patentckb.Location = new System.Drawing.Point(265, 349);
+            this.patentckb.Location = new System.Drawing.Point(263, 285);
             this.patentckb.Name = "patentckb";
             this.patentckb.Size = new System.Drawing.Size(44, 19);
             this.patentckb.TabIndex = 12;
@@ -395,12 +395,12 @@ namespace MyProject
             // 
             this.patent_type.FormattingEnabled = true;
             this.patent_type.Items.AddRange(new object[] {
-            "著作权",
+            "作品著作权",
             "发明专利",
             "实用新型",
-            "发明",
             "外观专利",
-            "软件著作"});
+            "软件著作权",
+            "其他"});
             this.patent_type.Location = new System.Drawing.Point(99, 64);
             this.patent_type.Name = "patent_type";
             this.patent_type.Size = new System.Drawing.Size(160, 23);
@@ -413,7 +413,7 @@ namespace MyProject
             "国家知识产权局",
             "韶关市雷门专利事务所",
             "广州新诺专利事务所"});
-            this.agency.Location = new System.Drawing.Point(491, 20);
+            this.agency.Location = new System.Drawing.Point(491, 155);
             this.agency.Name = "agency";
             this.agency.Size = new System.Drawing.Size(159, 23);
             this.agency.TabIndex = 14;

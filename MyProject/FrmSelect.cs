@@ -12,6 +12,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Collections;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
 
 namespace MyProject
 {
@@ -125,6 +126,7 @@ namespace MyProject
         public FrmSelect(int a, int limit)
         {
             InitializeComponent();
+            dataGridView1.DoubleBufferedDataGirdView(true);
             //  statusStripUserName.Text = name;
             statusStripUserName.Visible = false;
             string sqlinstitutecombo = "select institute_name from institute";
@@ -1485,6 +1487,22 @@ namespace MyProject
         // t.Enabled = true;//是否执行System.Timers.Timer.Elapsed事件；
 
     }
+
+    public static class DoubleBufferDataGridView
+    {
+        /// <summary>  
+        /// 双缓冲，解决闪烁问题  
+        /// </summary>  
+        /// <param name="dgv"></param>  
+        /// <param name="flag"></param>  
+        public static void DoubleBufferedDataGirdView(this DataGridView dgv, bool flag)
+        {
+            Type dgvType = dgv.GetType();
+            PropertyInfo pi = dgvType.GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
+            pi.SetValue(dgv, flag, null);
+        }
+    }
+
 }
     
     

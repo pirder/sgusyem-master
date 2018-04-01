@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProject", "MyProject\MyProject.csproj", "{FE51C4F3-6DDC-40F0-AC97-41103818C2F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncDataBase", "C:\Users\lenovo\Desktop\SyncDataBase\SyncDataBase\SyncDataBase.csproj", "{2F49789F-ACC0-478C-90B4-765B3D6349E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{FE51C4F3-6DDC-40F0-AC97-41103818C2F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE51C4F3-6DDC-40F0-AC97-41103818C2F2}.Release|x86.ActiveCfg = Release|x86
 		{FE51C4F3-6DDC-40F0-AC97-41103818C2F2}.Release|x86.Build.0 = Release|x86
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Debug|x86.Build.0 = Debug|Any CPU
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Release|x86.ActiveCfg = Release|Any CPU
+		{2F49789F-ACC0-478C-90B4-765B3D6349E8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

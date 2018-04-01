@@ -369,5 +369,184 @@ namespace MyProject
         {
             exitPanel.BackColor = Color.FromArgb(241, 248, 255);
         }
+
+        private void patentDeletePB_MouseEnter(object sender, EventArgs e)
+        {
+            patentDeletePanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void panel1_MouseEnter(object sender, EventArgs e)
+        {
+            patentDeletePanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void panel1_MouseLeave(object sender, EventArgs e)
+        {
+            patentDeletePanel.BackColor = Color.FromArgb(241, 248, 255);
+
+        }
+
+        private void patentDeletePB_MouseLeave(object sender, EventArgs e)
+        {
+            patentDeletePanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+        private void patentModifyPB_MouseEnter(object sender, EventArgs e)
+        {
+            patentModifyPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void panel2_MouseEnter(object sender, EventArgs e)
+        {
+            patentModifyPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void patentModifyPB_MouseLeave(object sender, EventArgs e)
+        {
+            patentModifyPanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+        private void panel2_MouseLeave(object sender, EventArgs e)
+        {
+            patentModifyPanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+        private void patentAddPB_MouseEnter(object sender, EventArgs e)
+        {
+            patentAddPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void panel3_MouseEnter(object sender, EventArgs e)
+        {
+            patentAddPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void panel3_MouseLeave(object sender, EventArgs e)
+        {
+            patentAddPanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+        private void patentAddPB_MouseLeave(object sender, EventArgs e)
+        {
+            patentAddPanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+        private void patentSearchPB_MouseEnter(object sender, EventArgs e)
+        {
+            patentSearchPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void panel4_MouseEnter(object sender, EventArgs e)
+        {
+            patentSearchPanel.BackColor = Color.FromArgb(207, 222, 244);
+        }
+
+        private void panel4_MouseLeave(object sender, EventArgs e)
+        {
+            patentSearchPanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+        private void patentSearchPB_MouseLeave(object sender, EventArgs e)
+        {
+            patentSearchPanel.BackColor = Color.FromArgb(241, 248, 255);
+        }
+
+
+        private void patentSearchPanel_Click(object sender, EventArgs e)
+        {
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
+
+            //去掉边框
+            fmselect.FormBorderStyle = FormBorderStyle.None;
+
+            fmselect.MdiParent = this;
+
+            //设置新窗体的Parent
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
+        }
+
+        private void patentAddPanel_Click(object sender, EventArgs e)
+        {
+            frm[fmusermanggerindex] = null;
+            frm[fmselectindex] = null;
+            if (frm[fmaddindex] != null)
+            {
+                frm[fmaddindex].Activate();
+                return;
+            }
+            fmadd = new FrmAdd();
+            frm[fmaddindex] = fmadd;
+            fmadd.WindowState = FormWindowState.Maximized;
+
+            //去掉边框
+            fmadd.FormBorderStyle = FormBorderStyle.None;
+
+            fmadd.MdiParent = this;
+
+            //设置新窗体的Parent
+            fmadd.Parent = mdiPanel;
+            fmadd.Show();
+        }
+
+        private void patentModifyPanel_Click(object sender, EventArgs e)
+        {
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
+
+            //去掉边框
+            fmselect.FormBorderStyle = FormBorderStyle.None;
+
+            fmselect.MdiParent = this;
+
+            //设置新窗体的Parent
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
+        }
+
+        private void patentDeletePanel_Click(object sender, EventArgs e)
+        {
+            frm[fmusermanggerindex] = null;
+            frm[fmaddindex] = null;
+            if (frm[fmselectindex] != null)
+            {
+                frm[fmselectindex].Activate();
+                return;
+            }
+            fmselect = new FrmSelect(0, limit);
+            frm[fmselectindex] = fmselect;
+            fmselect.WindowState = FormWindowState.Maximized;
+
+            //去掉边框
+            fmselect.FormBorderStyle = FormBorderStyle.None;
+
+            fmselect.MdiParent = this;
+
+            //设置新窗体的Parent
+            fmselect.Parent = mdiPanel;
+            fmselect.Show();
+        }
+
+        private void exitPanel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
