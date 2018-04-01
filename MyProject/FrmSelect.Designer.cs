@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -45,7 +46,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSelect));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPatentNum = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -85,6 +101,20 @@
             this.database1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new MyProject.Database1DataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.statusStripUserName = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.selectimportexcelbtn = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.selectexitbtn = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.新增ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.colPatentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPatentType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFirstDesigner = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,6 +129,7 @@
             this.ColPatentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColImageGrant = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColImageCertificate = new System.Windows.Forms.DataGridViewButtonColumn();
+
             this.statusStripUserName = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -119,17 +150,12 @@
             this.修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStripUserName.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -234,11 +260,10 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1234, 209);
+            this.panel1.Size = new System.Drawing.Size(1549, 209);
             this.panel1.TabIndex = 8;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // comboGrantDateEndDay
             // 
@@ -616,7 +641,6 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -628,7 +652,9 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 180;
+
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colPatentName,
             this.ColPatentType,
@@ -653,18 +679,19 @@
             dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            this.dataGridView1.Location = new System.Drawing.Point(0, 301);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 257);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 30;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1234, 223);
+            this.dataGridView1.Size = new System.Drawing.Size(1549, 370);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             this.dataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDown);
             this.dataGridView1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dataGridView1_Scroll);
             // 
+
             // colPatentName
             // 
             this.colPatentName.DataPropertyName = "patent_name";
@@ -849,16 +876,18 @@
             this.ColImageCertificate.ReadOnly = true;
             this.ColImageCertificate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
+
             // statusStripUserName
             // 
             this.statusStripUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(125)))), ((int)(((byte)(191)))));
             this.statusStripUserName.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStripUserName.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
-            this.statusStripUserName.Location = new System.Drawing.Point(0, 550);
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3});
+            this.statusStripUserName.Location = new System.Drawing.Point(0, 661);
             this.statusStripUserName.Name = "statusStripUserName";
-            this.statusStripUserName.Size = new System.Drawing.Size(1234, 25);
+            this.statusStripUserName.Size = new System.Drawing.Size(1549, 25);
             this.statusStripUserName.TabIndex = 10;
             this.statusStripUserName.Text = "statusStrip1";
             // 
@@ -871,112 +900,21 @@
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(189, 20);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(1354, 20);
+            this.toolStripStatusLabel2.Spring = true;
             this.toolStripStatusLabel2.Text = "由创想工作室提供技术支持";
             // 
-            // panel2
+            // toolStripStatusLabel3
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(159)))), ((int)(((byte)(215)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1234, 41);
-            this.panel2.TabIndex = 11;
-            this.panel2.DoubleClick += new System.EventHandler(this.panel2_DoubleClick);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1162, -1);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(38, 41);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 45;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1200, -1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(33, 40);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 44;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(1162, -1);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(1134, -3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
-            this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(43, 7);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(110, 24);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "数据查询";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(13, 20);
+            this.toolStripStatusLabel3.Text = " ";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(5, 265);
+            this.label13.Location = new System.Drawing.Point(11, 220);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(149, 24);
             this.label13.TabIndex = 12;
@@ -985,9 +923,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(420, 259);
+            this.pictureBox6.Location = new System.Drawing.Point(391, 214);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(29, 33);
+            this.pictureBox6.Size = new System.Drawing.Size(58, 40);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
@@ -997,7 +935,7 @@
             this.selectimportexcelbtn.BackColor = System.Drawing.Color.White;
             this.selectimportexcelbtn.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.selectimportexcelbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(49)))), ((int)(((byte)(152)))));
-            this.selectimportexcelbtn.Location = new System.Drawing.Point(455, 259);
+            this.selectimportexcelbtn.Location = new System.Drawing.Point(455, 214);
             this.selectimportexcelbtn.Name = "selectimportexcelbtn";
             this.selectimportexcelbtn.Size = new System.Drawing.Size(159, 40);
             this.selectimportexcelbtn.TabIndex = 14;
@@ -1010,9 +948,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(620, 262);
+            this.pictureBox7.Location = new System.Drawing.Point(620, 220);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 30);
+            this.pictureBox7.Size = new System.Drawing.Size(31, 27);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
@@ -1021,7 +959,7 @@
             // 
             this.selectexitbtn.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.selectexitbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(49)))), ((int)(((byte)(152)))));
-            this.selectexitbtn.Location = new System.Drawing.Point(657, 259);
+            this.selectexitbtn.Location = new System.Drawing.Point(657, 214);
             this.selectexitbtn.Name = "selectexitbtn";
             this.selectexitbtn.Size = new System.Drawing.Size(159, 40);
             this.selectexitbtn.TabIndex = 16;
@@ -1067,28 +1005,221 @@
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+
+            // colPatentName
+            // 
+            this.colPatentName.DataPropertyName = "patent_name";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.colPatentName.DefaultCellStyle = dataGridViewCellStyle2;
+            this.colPatentName.FillWeight = 93.11333F;
+            this.colPatentName.HeaderText = "专利名称";
+            this.colPatentName.Name = "colPatentName";
+            this.colPatentName.ReadOnly = true;
+            this.colPatentName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.colPatentName.Width = 396;
+            // 
+            // ColPatentType
+            // 
+            this.ColPatentType.DataPropertyName = "patent_type";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.ColPatentType.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ColPatentType.FillWeight = 234.7421F;
+            this.ColPatentType.HeaderText = "专利类别";
+            this.ColPatentType.Name = "ColPatentType";
+            this.ColPatentType.ReadOnly = true;
+            this.ColPatentType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColFirstDesigner
+            // 
+            this.ColFirstDesigner.DataPropertyName = "first_designer";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.ColFirstDesigner.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ColFirstDesigner.FillWeight = 12.41511F;
+            this.ColFirstDesigner.HeaderText = "第一设计人";
+            this.ColFirstDesigner.Name = "ColFirstDesigner";
+            this.ColFirstDesigner.ReadOnly = true;
+            this.ColFirstDesigner.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColFirstDesigner.Width = 125;
+            // 
+            // ColInstitute
+            // 
+            this.ColInstitute.DataPropertyName = "institute_name";
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.ColInstitute.DefaultCellStyle = dataGridViewCellStyle5;
+            this.ColInstitute.FillWeight = 31.03778F;
+            this.ColInstitute.HeaderText = "所属学院";
+            this.ColInstitute.Name = "ColInstitute";
+            this.ColInstitute.ReadOnly = true;
+            this.ColInstitute.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColInstitute.Width = 130;
+            // 
+            // ColOtherDesigner
+            // 
+            this.ColOtherDesigner.DataPropertyName = "other_designer";
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.ColOtherDesigner.DefaultCellStyle = dataGridViewCellStyle6;
+            this.ColOtherDesigner.FillWeight = 55.868F;
+            this.ColOtherDesigner.HeaderText = "其他设计人";
+            this.ColOtherDesigner.Name = "ColOtherDesigner";
+            this.ColOtherDesigner.ReadOnly = true;
+            this.ColOtherDesigner.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColOtherDesigner.Width = 330;
+            // 
+            // ColpatentNum
+            // 
+            this.ColpatentNum.DataPropertyName = "patent_num";
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.ColpatentNum.DefaultCellStyle = dataGridViewCellStyle7;
+            this.ColpatentNum.FillWeight = 32.91629F;
+            this.ColpatentNum.HeaderText = "专利号（申请号，登记号）";
+            this.ColpatentNum.Name = "ColpatentNum";
+            this.ColpatentNum.ReadOnly = true;
+            this.ColpatentNum.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColpatentNum.Width = 230;
+            // 
+            // ColComfirmDate
+            // 
+            this.ColComfirmDate.DataPropertyName = "confirm_date";
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            this.ColComfirmDate.DefaultCellStyle = dataGridViewCellStyle8;
+            this.ColComfirmDate.FillWeight = 15.51889F;
+            this.ColComfirmDate.HeaderText = "备案日期";
+            this.ColComfirmDate.Name = "ColComfirmDate";
+            this.ColComfirmDate.ReadOnly = true;
+            this.ColComfirmDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColApplyDate
+            // 
+            this.ColApplyDate.DataPropertyName = "apply_date";
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.ColApplyDate.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ColApplyDate.FillWeight = 15.51889F;
+            this.ColApplyDate.HeaderText = "申请日期";
+            this.ColApplyDate.Name = "ColApplyDate";
+            this.ColApplyDate.ReadOnly = true;
+            this.ColApplyDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColGrantDate
+            // 
+            this.ColGrantDate.DataPropertyName = "grant_date";
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            this.ColGrantDate.DefaultCellStyle = dataGridViewCellStyle10;
+            this.ColGrantDate.FillWeight = 15.51889F;
+            this.ColGrantDate.HeaderText = "授权日期";
+            this.ColGrantDate.Name = "ColGrantDate";
+            this.ColGrantDate.ReadOnly = true;
+            this.ColGrantDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColIsGrant
+            // 
+            this.ColIsGrant.DataPropertyName = "isgrant";
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            this.ColIsGrant.DefaultCellStyle = dataGridViewCellStyle11;
+            this.ColIsGrant.FillWeight = 6.207555F;
+            this.ColIsGrant.HeaderText = "是否授权";
+            this.ColIsGrant.Name = "ColIsGrant";
+            this.ColIsGrant.ReadOnly = true;
+            this.ColIsGrant.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColAgency
+            // 
+            this.ColAgency.DataPropertyName = "agency";
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.ColAgency.DefaultCellStyle = dataGridViewCellStyle12;
+            this.ColAgency.FillWeight = 32.91629F;
+            this.ColAgency.HeaderText = "代办机构";
+            this.ColAgency.Name = "ColAgency";
+            this.ColAgency.ReadOnly = true;
+            this.ColAgency.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColAgency.Width = 150;
+            // 
+            // ColPatentId
+            // 
+            this.ColPatentId.DataPropertyName = "patent_id";
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            this.ColPatentId.DefaultCellStyle = dataGridViewCellStyle13;
+            this.ColPatentId.FillWeight = 7.449066F;
+            this.ColPatentId.HeaderText = "专利序号";
+            this.ColPatentId.Name = "ColPatentId";
+            this.ColPatentId.ReadOnly = true;
+            this.ColPatentId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColImageGrant
+            // 
+            this.ColImageGrant.DataPropertyName = "grant_inform_image";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            this.ColImageGrant.DefaultCellStyle = dataGridViewCellStyle14;
+            this.ColImageGrant.FillWeight = 12.41511F;
+            this.ColImageGrant.HeaderText = "受理通知书图片";
+            this.ColImageGrant.Name = "ColImageGrant";
+            this.ColImageGrant.ReadOnly = true;
+            this.ColImageGrant.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColImageGrant.Width = 130;
+            // 
+            // ColImageCertificate
+            // 
+            this.ColImageCertificate.DataPropertyName = "certificate_image";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.ColImageCertificate.DefaultCellStyle = dataGridViewCellStyle15;
+            this.ColImageCertificate.FillWeight = 12.41511F;
+            this.ColImageCertificate.HeaderText = "证书图片";
+            this.ColImageCertificate.Name = "ColImageCertificate";
+            this.ColImageCertificate.ReadOnly = true;
+            this.ColImageCertificate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColImageCertificate.Width = 130;
+            // 
+
             // FrmSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1234, 575);
+
+            this.ClientSize = new System.Drawing.Size(1549, 686);
+
             this.Controls.Add(this.selectexitbtn);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.selectimportexcelbtn);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.statusStripUserName);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSelect";
             this.Text = "数据查询";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmSelect_FormClosed);
-            this.Load += new System.EventHandler(this.FrmSelect_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
@@ -1096,13 +1227,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.statusStripUserName.ResumeLayout(false);
             this.statusStripUserName.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
@@ -1154,9 +1278,6 @@
         private System.Windows.Forms.ComboBox comboGrantDateStartDay;
         private System.Windows.Forms.ComboBox comboGrantDateStartMonth;
         private System.Windows.Forms.ComboBox comboGrantDateStartYear;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label12;
 
 
         #region 改变窗口样式
@@ -1256,11 +1377,6 @@
          
 #endif
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -1272,6 +1388,7 @@
         private System.Windows.Forms.ToolStripMenuItem 修改ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 新增ToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPatentName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPatentType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColFirstDesigner;

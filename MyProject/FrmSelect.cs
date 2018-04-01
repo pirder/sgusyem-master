@@ -12,6 +12,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Collections;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
 
 namespace MyProject
 {
@@ -122,10 +123,12 @@ namespace MyProject
                 comboGrantDateEndYear.Items.Add(i);
         }
 
-        public FrmSelect(int a, string name)
+        public FrmSelect(int a, int limit)
         {
             InitializeComponent();
-            statusStripUserName.Text = name;
+            dataGridView1.DoubleBufferedDataGirdView(true);
+            //  statusStripUserName.Text = name;
+            statusStripUserName.Visible = false;
             string sqlinstitutecombo = "select institute_name from institute";
             DataTable dt = new DataTable();
             dt = Program.GetDataTable(sqlinstitutecombo);
@@ -503,6 +506,12 @@ namespace MyProject
            // ColImageCertificate.Text = "查看";//设置了TEXT的值，
             ColImageCertificate.UseColumnTextForButtonValue = false;//设置了这个属性    
             dt = Program.GetDataTable(sql.ToString());
+            if (dt.Rows.Count == 0)
+            {              
+                dataGridView1.DataSource = dt;
+                MessageBox.Show("没有符合条件的数据");
+                return;
+            }
             dataGridView1.DataSource = dt;
             DataRow dr = dt.Rows[0];
           /*  DataRow dr1 = dt.Rows[dataGridView1.CurrentRow.Index];
@@ -535,8 +544,7 @@ namespace MyProject
             }
             //  dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(81, 125, 191);
-            if (dataGridView1.Rows.Count == 0)
-                MessageBox.Show("没有符合条件的数据");
+           
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -1068,11 +1076,11 @@ namespace MyProject
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         public static extern int GetClassLong(IntPtr hwnd, int nIndex);
 
-        private void FrmSelect_Load(object sender, EventArgs e)
+     /*   private void FrmSelect_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             SetClassLong(this.Handle, GCL_STYLE, GetClassLong(this.Handle, GCL_STYLE) | CS_DropSHADOW);
-        }
+        }*/
 
         private Point offset;
 
@@ -1104,7 +1112,7 @@ namespace MyProject
 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+      /*  private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             pictureBox3.Visible = false;
@@ -1161,7 +1169,7 @@ namespace MyProject
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
         {
             pictureBox2.BackColor = Color.FromArgb(113, 159, 215);
-        }
+        }*/
 
         private void label15_Click(object sender, EventArgs e)
         {
@@ -1188,10 +1196,6 @@ namespace MyProject
             selectimportexcelbtn.BackColor = Color.FromArgb(255, 255, 255);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         //首先生成DataGridView的CellMouseDown事件  
         //右键获得单元格的选定
         private void dataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
@@ -1471,6 +1475,8 @@ namespace MyProject
             d.OutputAsExcelFile(dataGridView1);
         }
 
+      
+
 
         // System.Timers.Timer t1 = new System.Timers.Timer(10000);//实例化Timer类，设置间隔时间为10000毫秒；
         // System.Windows.Forms.Timer t = new System.Windows.Forms.Timer(10000);
@@ -1481,6 +1487,22 @@ namespace MyProject
         // t.Enabled = true;//是否执行System.Timers.Timer.Elapsed事件；
 
     }
+
+    public static class DoubleBufferDataGridView
+    {
+        /// <summary>  
+        /// 双缓冲，解决闪烁问题  
+        /// </summary>  
+        /// <param name="dgv"></param>  
+        /// <param name="flag"></param>  
+        public static void DoubleBufferedDataGirdView(this DataGridView dgv, bool flag)
+        {
+            Type dgvType = dgv.GetType();
+            PropertyInfo pi = dgvType.GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
+            pi.SetValue(dgv, flag, null);
+        }
+    }
+
 }
     
     
